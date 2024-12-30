@@ -1,0 +1,26 @@
+[project]
+name =  "phidata-vercel"
+version = "0.1.0"
+description = "phidata project deployed on Vercel"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckduckgo-search>=7.1.1",
+    "fastapi>=0.115.6",
+    "groq>=0.13.1",
+    "phidata>=2.7.6",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff"
+]
+
+[project.urls]
+Source = ""
+
+[tool.black]
+line-length = 120
+fast = true
